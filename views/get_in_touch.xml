@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="studiova_get_in_touch" name="studiova Get In Touch">
+        <!--  Get in touch Section -->
+        <section class="git-get-in-touch py-5 py-lg-11 py-xl-12">
+            <div class="container">
+                <div class="d-flex flex-column gap-5 gap-xl-10">
+                    <div class="row gap-7 gap-xl-0">
+                        <div class="col-xl-4 col-xxl-4">
+                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                                data-aos-duration="1000">
+                                <span
+                                    class="git-round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
+                                <hr class="git-border-line bg-white"/>
+                                <span class="badge text-bg-dark">Contact us</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-xxl-7">
+                            <div class="row">
+                                <div class="col-xxl-8">
+                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                                        data-aos-duration="1000">
+                                        <h2 class="mb-0">Get in touch</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between gap-7 gap-xl-0">
+                        <div class="col-xl-3">
+                            <p class="git-description mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Let's collaborate
+                                and create something amazing! Tell me about your project—I'm all
+                                ears.</p>
+                        </div>
+                        <div class="col-xl-8">
+                            <form class="git-form d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="git-form-group">
+                                    <input type="text" class="git-form-control form-control border-bottom border-dark" 
+                                        placeholder="Name" required="required"/>
+                                </div>
+                                <div class="git-form-group">
+                                    <input type="email" class="git-form-control form-control border-bottom border-dark" 
+                                        placeholder="Email" required="required"/>
+                                </div>
+                                <div class="git-form-group">
+                                    <textarea class="git-form-control form-control border-bottom border-dark" 
+                                        placeholder="Tell us about your project" rows="3" required="required"></textarea>
+                                </div>
+                                <button type="submit" class="git-animated-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="git-arr-2" viewBox="0 0 24 24">
+                                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                                    </svg>
+                                    <span class="git-text">Submit message</span>
+                                    <span class="git-circle"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="git-arr-1" viewBox="0 0 24 24">
+                                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
+

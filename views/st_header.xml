@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="studiova_nav" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+            <header class="header position-fixed start-0 top-0 w-100">
+                <div class="container">
+                    <div class="header-wrapper d-flex align-items-center justify-content-between">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="/" class="logo-white">
+                                <img src="/theme_studiovax/static/src/img/logo-white.svg" alt="logo" class="img-fluid"/>
+                            </a>
+                            <a href="/" class="logo-dark">
+                                <img src="/theme_studiovax/static/src/img/logo-dark.svg" alt="logo" class="img-fluid"/>
+                            </a>
+                        </div>
+
+                        <!-- Menu toggle button aligned to the right -->
+                        <div class="d-flex align-items-center gap-4 ms-auto">
+                            <div class="btn-group">
+                                <button class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-3" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                    <span class="menu-icon"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-4">
+                                    <div class="d-flex flex-column gap-6">
+                                        <div class="hstack justify-content-between border-bottom pb-6">
+                                            <p class="mb-0 fs-5 text-dark">Menu</p>
+                                            <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                                        </div>
+                                        <div class="d-flex flex-column gap-3">
+                                            <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                                                <li class="header-item">
+                                                    <a href="/" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>Home
+                                                    </a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/about" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>About
+                                                    </a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/projects" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>Projects
+                                                    </a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/blog" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>Blog
+                                                    </a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/services" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>Services
+                                                    </a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/contact" class="header-link">
+                                                        <img src="/theme_studiovax/static/src/img/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"/>Contact
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-3">
+                                                <a href="/web/login" class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign In</a>
+                                                <a href="/web/signup" class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign Up</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="text-dark" href="tel:+1-212-456-7890">+1-212-456-7890</a>
+                                            <a class="fs-8 text-dark fw-bold" href="mailto:info@studova.com">info@studova.com</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </xpath>
+    </template>
+</odoo>

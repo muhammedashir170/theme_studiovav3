@@ -1,0 +1,319 @@
+/* Sub Banner */
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Color Variables */
+:root {
+    --ab-primary: #C1FF72;
+    --ab-primary-dark: #9ED454;
+    --ab-dark: #1F2A2E;
+    --ab-white: #ffffff;
+    --ab-shadow-sm: 0 2px 8px rgba(31, 42, 46, 0.04);
+    --ab-shadow-md: 0 8px 24px rgba(31, 42, 46, 0.08);
+    --ab-shadow-lg: 0 16px 48px rgba(31, 42, 46, 0.12);
+    --ab-transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* BANNER SECTION BASE */
+.ab-banner-section {
+    font-family: "Manrope", sans-serif;
+    position: relative;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/theme_studiovax/static/src/img/aboutus-banner.jpg');
+    overflow: hidden;
+}
+
+.ab-banner-inner-section {
+    min-height: 650px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Background Overlay */
+.ab-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ab-banner-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================================
+   LEAF ICON
+   ============================================ */
+.ab-leaf-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    animation: ab-spin 2s linear infinite;
+}
+
+@keyframes ab-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================
+   DESCRIPTION TEXT
+   ============================================ */
+.ab-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--ab-white);
+    opacity: 0.7;
+}
+
+.ab-description .text-primary {
+    color: var(--ab-primary) !important;
+    opacity: 1;
+}
+
+/* ============================================
+   HEADING
+   ============================================ */
+.ab-heading {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--ab-white);
+    margin-bottom: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+.fs-16 {
+    font-size: 4rem;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+/* ============================================
+   BUTTON STYLING
+   ============================================ */
+.ab-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 1.75rem 0.25rem 0.25rem;
+    background-color: var(--ab-primary);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all var(--ab-transition-base);
+    overflow: hidden;
+}
+
+.ab-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(193, 255, 114, 0.4);
+}
+
+.ab-button .round-52 {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ab-white) !important;
+    transition: all var(--ab-transition-base);
+}
+
+.ab-button:hover .round-52 {
+    transform: rotate(45deg);
+}
+
+.ab-button iconify-icon {
+    color: var(--ab-dark) !important;
+    font-size: 0.875rem;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.position-relative {
+    position: relative !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.gap-4 {
+    gap: 1rem !important;
+}
+
+.gap-3 {
+    gap: 0.75rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pb-xl-10 {
+    padding-bottom: 6rem !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.text-white {
+    color: var(--ab-white) !important;
+}
+
+.text-opacity-70 {
+    opacity: 0.7;
+}
+
+.bg-primary {
+    background-color: var(--ab-primary) !important;
+}
+
+.bg-white {
+    background-color: var(--ab-white) !important;
+}
+
+.fs-5 {
+    font-size: 1.25rem;
+}
+
+.fs-8 {
+    font-size: 0.875rem;
+}
+
+.p-1 {
+    padding: 0.25rem !important;
+}
+
+.ps-7 {
+    padding-left: 1.75rem !important;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-dark {
+    color: var(--ab-dark) !important;
+}
+
+/* ============================================
+   RIPPLE EFFECT
+   ============================================ */
+.ab-ripple {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.6s ease-out, height 0.6s ease-out, opacity 0.6s ease-out;
+    opacity: 1;
+}
+
+.ab-ripple.ab-ripple-active {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 991.98px) {
+    .ab-banner-section,
+    .ab-banner-inner-section {
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ab-banner-section,
+    .ab-banner-inner-section {
+        min-height: 450px;
+    }
+
+    .ab-heading,
+    .fs-16 {
+        font-size: 2.5rem;
+    }
+
+    .ab-description,
+    .fs-5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .ab-heading,
+    .fs-16 {
+        font-size: 2rem;
+    }
+
+    .ab-description,
+    .fs-5 {
+        font-size: 0.875rem;
+    }
+
+    .ab-button {
+        padding: 0.2rem 1.5rem 0.2rem 0.2rem;
+    }
+
+    .ab-button .round-52 {
+        width: 44px;
+        height: 44px;
+    }
+}
+

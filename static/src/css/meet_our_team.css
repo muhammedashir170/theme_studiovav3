@@ -1,0 +1,381 @@
+/* Meet Our Team Section  */
+.mot-meet-our-team {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Badge Number Styles */
+.mot-badge-number {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mot-badge-number::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(193, 255, 114, 0.3);
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.mot-badge-number:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.mot-badge-number:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* Border Line Styles */
+.mot-border-line {
+    flex-grow: 1;
+    opacity: 0.2;
+    border-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.mot-border-line:hover {
+    opacity: 1;
+    border-color: #C1FF72 !important;
+}
+
+/* Team Card Container */
+.mot-meet-team {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mot-meet-team:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Image Container */
+.mot-meet-team-img {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+}
+
+.mot-meet-team-img img {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    object-fit: cover;
+    height: 100%;
+}
+
+.mot-meet-team:hover .mot-meet-team-img img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Overlay Styles */
+.mot-meet-team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem !important;
+}
+
+.mot-meet-team:hover .mot-meet-team-overlay {
+    opacity: 1;
+}
+
+/* Social Icons List */
+.mot-social {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.mot-social li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mot-meet-team:hover .mot-social li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mot-meet-team:hover .mot-social li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.mot-meet-team:hover .mot-social li:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.mot-meet-team:hover .mot-social li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+/* Social Icon Buttons */
+.mot-social a {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mot-social a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: #C1FF72;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.mot-social a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.mot-social a:hover {
+    transform: translateY(-5px) rotate(360deg);
+    box-shadow: 0 10px 20px rgba(193, 255, 114, 0.3);
+}
+
+.mot-social a img {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.mot-social a:hover img {
+    transform: scale(1.2);
+}
+
+/* Team Details */
+.mot-meet-team-details {
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.mot-meet-team-details h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.mot-meet-team-details h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #C1FF72 0%, #000000 100%);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mot-meet-team:hover .mot-meet-team-details h4::after {
+    width: 100%;
+}
+
+.mot-meet-team:hover .mot-meet-team-details h4 {
+    color: #C1FF72;
+    transform: translateX(5px);
+}
+
+.mot-meet-team-details p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.mot-meet-team:hover .mot-meet-team-details p {
+    color: #000000;
+    transform: translateX(5px);
+}
+
+/* Floating Animation - Removed as per user request */
+
+/* Shimmer Effect */
+@keyframes mot-shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.mot-meet-team-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: translateX(-100%);
+    z-index: 3;
+}
+
+.mot-meet-team:hover .mot-meet-team-img::after {
+    animation: mot-shimmer 1s ease;
+}
+
+/* Decorative Elements */
+.mot-meet-our-team::before,
+.mot-meet-our-team::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(193, 255, 114, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.mot-meet-our-team::before {
+    top: -200px;
+    right: -200px;
+}
+
+.mot-meet-our-team::after {
+    bottom: -200px;
+    left: -200px;
+}
+
+.mot-meet-our-team > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ripple Effect */
+.mot-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(193, 255, 114, 0.4);
+    transform: scale(0);
+    animation: mot-ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes mot-ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1199.98px) {
+    .mot-meet-team-img {
+        aspect-ratio: 3/4;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .mot-meet-our-team {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .mot-meet-team-img {
+        aspect-ratio: 3/4;
+    }
+
+    .mot-meet-team-overlay {
+        padding: 1.5rem !important;
+    }
+
+    .mot-social {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .mot-badge-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.875rem;
+    }
+    
+    .mot-meet-team-details h4 {
+        font-size: 1.25rem;
+    }
+    
+    .mot-meet-team-details p {
+        font-size: 0.9rem;
+    }
+    
+    .mot-social a {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .mot-social a img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Text Selection Style */
+.mot-meet-our-team ::selection {
+    background-color: #C1FF72;
+    color: #000000;
+}
+

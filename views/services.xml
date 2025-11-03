@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="services_section" name="Services Section">
+        <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
+            <div class="container">
+                <div class="d-flex flex-column gap-5 gap-xl-10">
+                    <!-- Section Header -->
+                    <div class="row gap-7 gap-xl-0">
+                        <div class="col-xl-4 col-xxl-4">
+                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                                data-aos-duration="1000">
+                                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
+                                <hr class="border-line bg-white"/>
+                                <span class="badge text-dark bg-white">Services</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-xxl-7">
+                            <div class="row">
+                                <div class="col-xxl-10">
+                                    <div class="d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100"
+                                        data-aos-duration="1000">
+                                        <h2 class="mb-0 text-white display-4 fw-bold">What we do</h2>
+                                        <p class="fs-5 mb-0 text-white text-opacity-70">We deliver comprehensive digital solutions that transform your business vision into reality through innovative design and development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Grid -->
+                    <div class="services-grid">
+                        <div class="row g-4 g-lg-5">
+                            <!-- Service Card 1 -->
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="service-card">
+                                    <div class="service-card-image">
+                                        <img src="/theme_studiovax/static/src/img/services-img-1.jpg" alt="Brand Identity" class="img-fluid"/>
+                                        <div class="service-overlay"></div>
+                                    </div>
+                                    <div class="service-card-content">
+                                        <div class="service-number">01</div>
+                                        <h3 class="service-title">Brand Identity</h3>
+                                        <p class="service-description">Create a powerful brand identity that resonates with your audience. We craft unique visual identities, logos, and brand guidelines that tell your story and set you apart from the competition.</p>
+                                        <div class="service-features">
+                                            <span class="service-tag">Logo Design</span>
+                                            <span class="service-tag">Brand Guidelines</span>
+                                            <span class="service-tag">Visual Identity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Card 2 -->
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                <div class="service-card">
+                                    <div class="service-card-image">
+                                        <img src="/theme_studiovax/static/src/img/services-img-2.jpg" alt="Web Development" class="img-fluid"/>
+                                        <div class="service-overlay"></div>
+                                    </div>
+                                    <div class="service-card-content">
+                                        <div class="service-number">02</div>
+                                        <h3 class="service-title">Web Development</h3>
+                                        <p class="service-description">Build robust, scalable web applications with cutting-edge technologies. From responsive websites to complex web platforms, we deliver solutions that drive business growth and user engagement.</p>
+                                        <div class="service-features">
+                                            <span class="service-tag">Responsive Design</span>
+                                            <span class="service-tag">Web Applications</span>
+                                            <span class="service-tag">E-commerce</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Card 3 -->
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <div class="service-card">
+                                    <div class="service-card-image">
+                                        <img src="/theme_studiovax/static/src/img/services-img-3.jpg" alt="Content Creation" class="img-fluid"/>
+                                        <div class="service-overlay"></div>
+                                    </div>
+                                    <div class="service-card-content">
+                                        <div class="service-number">03</div>
+                                        <h3 class="service-title">Content Creation</h3>
+                                        <p class="service-description">Engage your audience with compelling content that converts. Our creative team produces high-quality content strategies, copywriting, and visual content that aligns with your brand voice.</p>
+                                        <div class="service-features">
+                                            <span class="service-tag">Copywriting</span>
+                                            <span class="service-tag">Content Strategy</span>
+                                            <span class="service-tag">Social Media</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Card 4 -->
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <div class="service-card">
+                                    <div class="service-card-image">
+                                        <img src="/theme_studiovax/static/src/img/services-img-4.jpg" alt="Motion &amp; 3D Modeling" class="img-fluid"/>
+                                        <div class="service-overlay"></div>
+                                    </div>
+                                    <div class="service-card-content">
+                                        <div class="service-number">04</div>
+                                        <h3 class="service-title">Motion &amp; 3D Modeling</h3>
+                                        <p class="service-description">Bring your ideas to life with stunning motion graphics and 3D visualizations. We create immersive animations and realistic 3D models that captivate and communicate your message effectively.</p>
+                                        <div class="service-features">
+                                            <span class="service-tag">Animation</span>
+                                            <span class="service-tag">3D Visualization</span>
+                                            <span class="service-tag">Motion Graphics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom CTA -->
+                    <div class="row">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <div class="services-cta text-center">
+                                <p class="text-white text-opacity-70 fs-5 mb-4">Ready to transform your digital presence?</p>
+                                <a href="/contact" class="services-contact-link">
+                                    <span>Get in Touch</span>
+                                    <iconify-icon icon="lucide:arrow-right" class="ms-2"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
+

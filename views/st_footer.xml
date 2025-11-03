@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="st_footer" inherit_id="website.layout" name="Studiova">
+       <xpath expr="//div[@id='footer']" position="replace">
+    <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 mb-8 mb-xl-0">
+            <div class="d-flex flex-column gap-8 pe-xl-5">
+              <h2 class="mb-0 text-white">Build something together?</h2>
+              <div class="d-flex flex-column gap-2">
+                <a href="mailto:info@studova.com" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+                  <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"/>
+                  info@studova.com
+                </a>
+                <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+                  <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"/>
+                  1234 Studio Ave, Design City
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a class="link-hover fs-5 text-white" href="/">Home</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/about">About</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/services">Services</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/projects">Work</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/">Terms</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/">Privacy Policy</a></li>
+              <li><a class="link-hover fs-5 text-white" href="/">Error 404</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a class="link-hover fs-5 text-white" href="#"><iconify-icon icon="lucide:facebook" class="fs-6 text-white"/> Facebook</a></li>
+              <li><a class="link-hover fs-5 text-white" href="#"><iconify-icon icon="lucide:instagram" class="fs-6 text-white"/> Instagram</a></li>
+              <li><a class="link-hover fs-5 text-white" href="#"><iconify-icon icon="lucide:twitter" class="fs-6 text-white"/> Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+            <p class="mb-0 text-white text-opacity-70 text-md-end">© Studiova copyright 2025</p>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="#" target="_blank">XAPP</a></p>
+    </footer>
+
+      </xpath>
+  </template>
+</odoo>
