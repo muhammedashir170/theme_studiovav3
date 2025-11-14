@@ -1,0 +1,227 @@
+/* About Image Section */
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Color Variables */
+:root {
+    --ai-primary: #C1FF72;
+    --ai-primary-dark: #9ED454;
+    --ai-dark: #1F2A2E;
+    --ai-white: #ffffff;
+    --ai-transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   SECTION BASE
+   ============================================ */
+.ai-about-img {
+    font-family: "Manrope", sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============================================
+   MAIN IMAGE
+   ============================================ */
+.ai-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+/* ============================================
+   MARQUEE SECTION
+   ============================================ */
+.ai-marquee {
+    position: relative;
+    width: 100%;
+    background-color: var(--ai-primary) !important;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.ai-marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: ai-marquee-scroll 80s linear infinite;
+    will-change: transform;
+}
+
+/* Pause animation on hover */
+.ai-marquee:hover .ai-marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes ai-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ============================================
+   MARQUEE ITEMS
+   ============================================ */
+.ai-marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    transition: all var(--ai-transition-base);
+}
+
+.ai-marquee-item h4 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ai-dark);
+    white-space: nowrap;
+    font-family: "Manrope", sans-serif;
+}
+
+.ai-marquee-item:hover {
+    transform: scale(1.05);
+}
+
+.ai-marquee-item:hover h4 {
+    color: var(--ai-dark);
+}
+
+/* ============================================
+   DOT SEPARATOR
+   ============================================ */
+.ai-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--ai-dark);
+    opacity: 0.1;
+    flex-shrink: 0;
+}
+
+.round-10 {
+    width: 10px;
+    height: 10px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.w-100 {
+    width: 100% !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.bg-primary {
+    background-color: var(--ai-primary) !important;
+}
+
+.py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.gap-8 {
+    gap: 2rem !important;
+}
+
+.hstack {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.gap-4 {
+    gap: 1rem !important;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.bg-dark {
+    background-color: var(--ai-dark) !important;
+}
+
+.bg-opacity-10 {
+    opacity: 0.1;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.object-fit-cover {
+    object-fit: cover !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 991px) {
+    .ai-main-image {
+        max-height: 500px;
+    }
+
+    .ai-marquee-item h4 {
+        font-size: 1.25rem;
+    }
+
+    .ai-marquee-content {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .ai-main-image {
+        max-height: 400px;
+    }
+
+    .ai-marquee-item h4 {
+        font-size: 1rem;
+    }
+
+    .ai-marquee-content {
+        gap: 1rem;
+    }
+
+    .ai-marquee {
+        padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .ai-main-image {
+        max-height: 300px;
+    }
+
+    .ai-marquee-item h4 {
+        font-size: 0.875rem;
+    }
+
+    .ai-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
